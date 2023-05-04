@@ -28,8 +28,10 @@ Nesse presente experimento redes neurais artificiais serão treinadas para recon
 ### Dados a serem estudados
 
 Nesse experimento nosso alfabeto de dados é composto por 16 caracteres, de dimensão 7x9, ou seja, a rede neural terá 63 entradas, que é a dimensão da imagem gerada. As imagens serão geradas por meio de uma matriz binária, e o alfabeto pode ser visto na figura. Já as entradas com ruídos serão obtidas a partir das entradas sem ruídos e serão aplicadas aleatoriamente mudanças dos estados de posições da matriz de acordo com a quantidade de ruído pedida, ou seja, com o ruído em 10%, até 10% das posições da matriz podem ter seus valores trocados, onde era 1 se torna 0 e vice-versa. Um exemplo de caracteres com 10% de ruído pode ser visualizado na figura.
-
-
+<p align="center">
+<img height="200"src="alfa.png"/>
+<img height="200" src="alfa10.png"/>
+</p>
 
 # Estrutura da Rede Neural
 A rede neural multicamada feedforward foi construída com uma lógica densa, ou seja, todos os neurônicos da camada anterior se conectam em todos os neurônios da camada seguinte. Na configuração foram criadas duas camadas ocultas, uma cada de entrada e uma camada de saída, onde temos a seguinte configuração nas camadas:
@@ -69,16 +71,16 @@ Para as demais redes neurais com ruídos essas foram treinadas com conjuntos de 
 
 Esse processo foi realizado para 5 redes neurais treinadas com ruído em que respectivamente tiveram os seguintes níveis de ruído: 10\%, 20\%, 30\%, 40\% e 50\% de ruído. Lembrando que os pesos gerados nos treinamentos anteriores serviram como base para os próximos treinamentos
 
-### Método de obtenção de resultados}
+### Método de obtenção de resultados
 
 Para os resultados do experimento todas as 6 redes foram testadas cada uma com 20 conjuntos de alfabeto como entradas. A rede neural treinada sem ruído foi submetida a validação de todos os 6 níveis de ruídos existentes no experimento. A segunda rede neural testada é um conjunto das outras 5 redes treinadas com ruído, cada rede foi testada com o nível de ruído que foi treinada no mesmo escopo do treinamento sem ruído, onde 20 conjuntos de alfabetos foram geradas e testados
 
 As curvas geradas pelas validações das redes neurais podem ser vistas nas figuras \ref{fim} e \ref{fim2}, nessa figura podemos ver o comportamento das duas redes em relação ao nível de ruído e o seu percentual de erro em cada nível. A curva verde mostra os resultados da rede neural sem o treinamento com ruídos e a curva azul mostra o resultado da rede ao ser treinada com ruído. 
+<p align="center">
+<img height="500" src="output.png"/>
+</p>
 
-<img href=""/>
-
-%------------------------------------------------------------------------
-\section{Resultados e Conclusões}
+## Resultados e Conclusões
 
 
 Neste experimento, investigamos o impacto do ruído nas entradas durante o treinamento de redes neurais multicamadas feedforward para tarefas de classificação. Por meio de experimentos comparativos, foi possível observar os efeitos do ruído nas métricas de desempenho dos modelos treinados.
